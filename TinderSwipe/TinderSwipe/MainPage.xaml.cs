@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using TinderSwipe.Controls;
 using Xamarin.Forms;
 
 namespace TinderSwipe
@@ -16,6 +17,7 @@ namespace TinderSwipe
         public MainPage()
         {
             InitializeComponent();
+            MainGrid.Children.Add(new SwiperControl());
         }
     }
 }

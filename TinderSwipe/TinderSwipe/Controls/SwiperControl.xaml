@@ -14,17 +14,17 @@
                     <RowDefinition Height="40"/>
                 </Grid.RowDefinitions>
                 <BoxView BackgroundColor="White" Grid.RowSpan="2"/>
-                <Label x:Name="DislikeLabel" Text="Dislike" TextColor="Red"/>
-                <Label x:Name="LikeLabel" Text="Like" TextColor="Lime"/>
-                <Image x:Name="Photo" Source="#" Margin="10" Aspect="AspectFill" BackgroundColor="Gray"/>
-                <Label x:Name="LoadingLabel"
-                Text="Loading..."
-                TextColor="White"
-                FontSize="Large"
-                FontAttributes="Bold"
-                HorizontalOptions="Center"
-                VerticalOptions="Center" />
                 
+                <Image x:Name="image" Source="#" Margin="10" Aspect="AspectFill" BackgroundColor="Gray"/>
+                <Label x:Name="DislikeLabel" Text="DISLIKE" TextColor="Red" FontSize="30" FontAttributes="Bold" Margin="20,10" Opacity="0" HorizontalOptions="End"/>
+                <Label x:Name="LikeLabel" Text="LIKE" TextColor="Lime" FontSize="30" FontAttributes="Bold" Margin="20,10" Opacity="0" HorizontalOptions="Start"/>
+                <Label x:Name="LoadingLabel"
+                    Text="Loading..."
+                    TextColor="White"
+                    FontSize="Large"
+                    FontAttributes="Bold"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center" />
                 <Label x:Name="DescriptionLabel"
                     Margin="10,0"
                     Text="A picture of grandpa"
