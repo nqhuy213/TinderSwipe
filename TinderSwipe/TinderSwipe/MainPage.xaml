@@ -8,8 +8,10 @@
 
     <Grid Padding="0,40" x:Name="MainGrid">
         <Grid.RowDefinitions>
-            
+            <RowDefinition Height="400"/>
+            <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
+        
     </Grid>
 
 </ContentPage>
