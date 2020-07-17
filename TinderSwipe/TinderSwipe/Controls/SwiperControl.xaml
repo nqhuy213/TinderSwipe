@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="TinderSwipe.Controls.SwiperControl">
+  <ContentView.Content>
+        
+        <ContentView x:Name="photo" Grid.ColumnSpan="3" Padding="40">
+            <Grid x:Name="photoGrid" BackgroundColor="Black" Padding="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="40"/>
+                </Grid.RowDefinitions>
+                <BoxView BackgroundColor="White" Grid.RowSpan="2"/>
+                <Label x:Name="DislikeLabel" Text="Dislike" TextColor="Red"/>
+                <Label x:Name="LikeLabel" Text="Like" TextColor="Lime"/>
+                <Image x:Name="Photo" Source="#" Margin="10" Aspect="AspectFill" BackgroundColor="Gray"/>
+                <Label x:Name="LoadingLabel"
+                Text="Loading..."
+                TextColor="White"
+                FontSize="Large"
+                FontAttributes="Bold"
+                HorizontalOptions="Center"
+                VerticalOptions="Center" />
+                
+                <Label x:Name="DescriptionLabel"
+                    Margin="10,0"
+                    Text="A picture of grandpa"
+                    Grid.Row="1"
+                    FontFamily="Bradley Hand" />    
+            </Grid>
+        </ContentView>
+        
+  </ContentView.Content>
+</ContentView>
